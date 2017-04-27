@@ -22,7 +22,7 @@ window.location = 'index.php';
 </script>
 </html>
 <?php
-        }
+        }else{
         $password = (int)$password;
 	$sql = "SELECT * FROM polls WHERE `g_id` = '$password'";
 	$res = mysqli_query($conn, $sql);
@@ -64,7 +64,7 @@ window.location = 'index.php';
 	<?php
 	}
 	
-	
+	}
 ?>
 <!--
 	-->
